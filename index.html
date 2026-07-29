@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CazéTV — Loja Oficial (conceito)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="prog"></div>
+  <canvas id="confetti"></canvas>
+
+  <header id="hd">
+    <div class="wrap nav">
+      <a href="#top" class="brand"><img src="https://yt3.googleusercontent.com/R-NJzpNfFCOxdwRZGFsCzCDK4pLDpfU0MN77CYXf8S9UP4YDbA4YgE_1WIshV2zz54A-Bns=s176-c-k-c0x00ffffff-no-rj" onerror="this.style.display='none'" alt="">Cazé<span class="tv">TV</span><span class="studytag">conceito</span></a>
+      <nav class="navlinks">
+        <a href="#agenda" data-i18n="nav.agenda">Agenda</a>
+        <a href="#assista" data-i18n="nav.assista">Assista</a>
+        <a href="#drop" data-i18n="nav.colecao">Coleção</a>
+        <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+        <a href="#elenco" data-i18n="nav.elenco">Elenco</a>
+        <a class="navcta" href="https://www.mercadolivre.com.br/loja/caze-tv" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="nav.loja">Loja oficial</span></a>
+      </nav>
+      <div class="navtools">
+        <button class="ttoggle" id="themeBtn" aria-label="Alternar tema"><i class="fa-solid fa-moon"></i></button>
+        <div class="langsel" id="langSel"><button data-lang="pt" class="on">PT</button><button data-lang="en">EN</button><button data-lang="es">ES</button></div>
+      </div>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+    <div class="mobmenu" id="mobmenu">
+      <a href="#agenda" data-i18n="nav.agenda">Agenda</a><a href="#assista" data-i18n="nav.assista">Assista</a><a href="#drop" data-i18n="nav.colecao">Coleção</a><a href="#sobre" data-i18n="nav.sobre">Sobre</a><a href="#elenco" data-i18n="nav.elenco">Elenco</a>
+      <a href="https://www.mercadolivre.com.br/loja/caze-tv" target="_blank" rel="noopener" data-i18n="nav.lojam">Loja oficial ›</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="brush">
+      <div class="b1"></div>
+      <div class="b2"></div>
+    </div>
+    <div class="ghost"><span class="g">METEU ESSA?&nbsp;&nbsp;METEU ESSA?&nbsp;&nbsp;METEU ESSA?&nbsp;&nbsp;METEU ESSA?&nbsp;&nbsp;</span></div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" data-i18n="hero.eye">● A loja oficial da Cazé</span>
+        <h1 class="disp"><span class="ln"><i data-i18n="hero.h1a">A oficial</i></span><span class="ln"><i data-i18n-html="hero.h1b">é essa <span class="ouro">aqui.</span></i></span></h1>
+        <p class="sub" data-i18n-html="hero.sub">Camisa da Cazé, feita pra quem vive o jogo. Coleção da Copa <b>oficial</b>, direto da fonte.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#drop" data-i18n="hero.cta1">Ver a coleção ›</a>
+          <a class="btn ghost" href="#agenda" data-i18n="hero.cta2">Onde assistir</a>
+        </div>
+      </div>
+      <div class="heroart">
+        <span class="star s1">★</span><span class="star s2">★</span><span class="star s3">★</span><span class="star s4">★</span>
+        <div class="medal">
+          <div class="inner">
+            <img src="https://yt3.googleusercontent.com/R-NJzpNfFCOxdwRZGFsCzCDK4pLDpfU0MN77CYXf8S9UP4YDbA4YgE_1WIshV2zz54A-Bns=s400-c-k-c0x00ffffff-no-rj" onerror="this.parentNode.innerHTML='<div class=fb>CZ</div>'" alt="Mascote CazéTV">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scrollcue" data-i18n="hero.scroll">rola aí ↓</div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="wrap">
+      <div class="stg">
+        <div class="reveal">
+          <div class="n" data-count="40" data-suf="M">0</div>
+          <div class="l" data-i18n="stat.yt">inscritos no YouTube</div>
+        </div>
+        <div class="reveal">
+          <div class="n" data-count="22" data-suf="M">0</div>
+          <div class="l" data-i18n="stat.ig">seguidores no Instagram</div>
+        </div>
+        <div class="reveal">
+          <div class="n" data-count="104" data-suf="">0</div>
+          <div class="l" data-i18n="stat.copa">jogos da Copa 2026</div>
+        </div>
+        <div class="reveal">
+          <div class="n" data-count="100" data-suf="%">0</div>
+          <div class="l" data-i18n="stat.free">de graça, no YouTube</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marq">
+    <div class="track"><span>Loja oficial</span><span class="d">&#9679;</span><span>Coleção da Copa</span><span class="d">&#9679;</span><span>Edição limitada</span><span class="d">&#9679;</span><span>Meteu essa?</span><span class="d">&#9679;</span><span>Enquanto durar</span><span class="d">&#9679;</span><span>Loja oficial</span><span class="d">&#9679;</span><span>Coleção da Copa</span><span class="d">&#9679;</span><span>Edição limitada</span><span class="d">&#9679;</span><span>Meteu essa?</span><span class="d">&#9679;</span><span>Enquanto durar</span><span class="d">&#9679;</span></div>
+  </div>
+
+  <!-- AGENDA -->
+  <section class="blk" id="agenda" style="background:var(--graf2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
+    <div class="wrap">
+      <div class="kick reveal" data-i18n="ag.kick">Onde assistir</div>
+      <h2 class="disp htitle reveal" data-i18n-html="ag.title">Jogo é na <span class="ouro">Cazé</span></h2>
+      <p class="lead reveal" data-i18n="ag.lead">De graça no YouTube. O que a Cazé acabou de mostrar — e o que vem por aí.</p>
+      <div class="matchcard reveal">
+        <div>
+          <span class="live champ"><i class="fa-solid fa-trophy"></i> <span data-i18n="ag.tag">Campeão da Copa 2026</span></span>
+          <div class="teams"><span class="flag fl-es"></span> <span data-i18n="ag.t1">Espanha</span> <span class="x">1&nbsp;×&nbsp;0</span> <span data-i18n="ag.t2">Argentina</span> <span class="flag fl-ar"></span></div>
+          <div class="when" data-i18n="ag.match">Espanha é bicampeã mundial · gol de Ferran Torres na prorrogação · você viu na Cazé.</div>
+        </div>
+        <a class="btn primary" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener"><i class="fa-solid fa-play"></i> <span data-i18n="ag.watch">Ver os melhores momentos</span></a>
+      </div>
+      <div class="next">
+        <a class="nrow reveal" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener"><span><span class="comp" data-i18n="ag.n1">Brasileirão</span><br><span data-i18n="ag.n1d">Rodada a rodada · 1 jogo aberto</span></span><span>▸</span></a>
+        <a class="nrow reveal" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener"><span><span class="comp" data-i18n="ag.n2">Libertadores</span><br><span data-i18n="ag.n2d">melhores momentos</span></span><span>▸</span></a>
+        <a class="nrow reveal" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener"><span><span class="comp" data-i18n="ag.n3">Europa League</span><br><span data-i18n="ag.n3d">3 temporadas</span></span><span>▸</span></a>
+        <a class="nrow reveal" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener"><span><span class="comp" data-i18n="ag.n4">Mundial de Clubes</span><br><span data-i18n="ag.n4d">todos os jogos</span></span><span>▸</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTA -->
+  <section class="blk" id="assista">
+    <div class="wrap">
+      <div class="kick reveal" data-i18n="as.kick">Assista mais</div>
+      <h2 class="disp htitle reveal" data-i18n-html="as.title">Melhores momentos<br>e onde <span class="ouro">acompanhar</span></h2>
+      <p class="lead reveal" data-i18n="as.lead">Reviva os lances e siga a Cazé em todos os canais.</p>
+      <div class="vwrap reveal">
+        <a class="vmain vthumb" href="https://youtu.be/Yv9TKiMxpYo" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/Yv9TKiMxpYo/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/Yv9TKiMxpYo/hqdefault.jpg'" loading="lazy" alt="São Paulo x Mirassol"><span class="vplay"><i class="fa-solid fa-play"></i></span><span class="vt">São Paulo 2&#215;0 Mirassol &#183; Paulistão</span></a>
+        <div class="vside">
+          <a class="vthumb" href="https://youtu.be/BNZdE8dkII0" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/BNZdE8dkII0/hqdefault.jpg" loading="lazy" alt="Porcinos x FURIA"><span class="vplay"><i class="fa-solid fa-play"></i></span><span class="vt">Porcinos 3&#215;5 FURIA &#183; Kings League</span></a>
+          <a class="vthumb" href="https://youtu.be/iC52krp5D_A" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/iC52krp5D_A/hqdefault.jpg" loading="lazy" alt="Karasu x G3X"><span class="vplay"><i class="fa-solid fa-play"></i></span><span class="vt">Karasu 1&#215;5 G3X &#183; Kings League</span></a>
+        </div>
+      </div>
+      <p class="submore reveal" data-i18n="as.more">Quer ver mais? Tá tudo nos canais oficiais 👇</p>
+      <div class="chgrid"><a class="chcard reveal" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener">
+          <div class="ic yt"><i class="fa-brands fa-youtube"></i></div>
+          <div class="cn">CazéTV</div>
+          <div class="cf" data-i18n="ch.yt">YouTube · 40 mi de inscritos</div>
+          <div class="go" data-i18n="ch.b1">Assistir ›</div>
+        </a><a class="chcard reveal" href="https://www.instagram.com/cazetv/" target="_blank" rel="noopener">
+          <div class="ic ig"><i class="fa-brands fa-instagram"></i></div>
+          <div class="cn">@cazetv</div>
+          <div class="cf" data-i18n="ch.ig">Instagram · 22 mi de seguidores</div>
+          <div class="go" data-i18n="ch.b2">Seguir ›</div>
+        </a><a class="chcard reveal" href="https://www.youtube.com/@CortesdoCasimiro" target="_blank" rel="noopener">
+          <div class="ic co"><i class="fa-solid fa-scissors"></i></div>
+          <div class="cn">Cortes do Casimiro</div>
+          <div class="cf" data-i18n="ch.co">YouTube · 3,1 mi de inscritos</div>
+          <div class="go" data-i18n="ch.b3">Ver cortes ›</div>
+        </a><a class="chcard reveal" href="https://whatsapp.com/channel/0029Va2h7c26RGJBKeVlzN1Q" target="_blank" rel="noopener">
+          <div class="ic wa"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="cn">Canal no WhatsApp</div>
+          <div class="cf" data-i18n="ch.wa">Avisos e novidades</div>
+          <div class="go" data-i18n="ch.b4">Entrar ›</div>
+        </a></div>
+    </div>
+  </section>
+
+  <!-- DROP -->
+  <section class="blk" id="drop">
+    <div class="wrap">
+      <div class="badge-of reveal" data-i18n="drop.badge">✓ 100% oficial · licenciado</div>
+      <div class="kick reveal" data-i18n="drop.kick">O drop</div>
+      <h2 class="disp htitle reveal" data-i18n-html="drop.title">Chegou a coleção<br>da <span class="ouro">Copa</span></h2>
+      <p class="lead reveal" data-i18n="drop.lead">Quatro cores, edição da Copa. Quando acaba, acabou — então não vacila.</p>
+      <div class="dgrid">
+        <div class="pcard reveal" data-tilt>
+          <div class="tag" data-i18n="p.tag1">Mais vendida</div>
+          <div class="pshirt"><img class="pimg" src="https://http2.mlstatic.com/D_722510-MLB112112112156_062026-O.jpg" loading="lazy" alt="Camisa 10 — Amarela"></div>
+          <div class="pmeta">
+            <div class="name" data-i18n="p.n1">Camisa 10 — Amarela</div>
+            <div class="desc" data-i18n="p.d1">A do Brasil. Cinco estrelas no peito.</div>
+            <div class="price"><span class="now">R$ 69</span><span class="old">R$ 159</span><span class="off">56% OFF</span></div>
+          </div><a class="buy" href="https://produto.mercadolivre.com.br/MLB-6723882632-camisa-10-amarela-traje-cazetv-_JM" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="drop.buy">Garante a sua</span></a>
+        </div>
+        <div class="pcard reveal" data-tilt>
+          <div class="tag" data-i18n="p.tag2">Time CazéTV</div>
+          <div class="pshirt"><img class="pimg" src="https://http2.mlstatic.com/D_NQ_NP_864075-MLB112336692239_052026-O-camisa-azul-traje-cazetv.webp" loading="lazy" alt="Camisa 10 — Azul"></div>
+          <div class="pmeta">
+            <div class="name" data-i18n="p.n2">Camisa 10 — Azul</div>
+            <div class="desc" data-i18n="p.d2">Escudo no coração. Time CazéTV.</div>
+            <div class="price"><span class="now">R$ 69</span><span class="old">R$ 159</span><span class="off">56% OFF</span></div>
+          </div><a class="buy" href="https://produto.mercadolivre.com.br/MLB-4658094775-camisa-azul-traje-cazetv-_JM" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="drop.buy">Garante a sua</span></a>
+        </div>
+        <div class="pcard reveal" data-tilt>
+          <div class="tag" data-i18n="p.tag3">Clássica</div>
+          <div class="pshirt"><img class="pimg" src="https://http2.mlstatic.com/D_NQ_NP_816797-MLB113158747391_062026-O-camisa-preta-traje-cazetv.webp" loading="lazy" alt="Camisa Traje — Preta"></div>
+          <div class="pmeta">
+            <div class="name" data-i18n="p.n3">Camisa Traje — Preta</div>
+            <div class="desc" data-i18n="p.d3">Emblema dourado. Discreta e certeira.</div>
+            <div class="price"><span class="now">R$ 69</span><span class="old">R$ 159</span><span class="off">56% OFF</span></div>
+          </div><a class="buy" href="https://produto.mercadolivre.com.br/MLB-6723574982-camisa-preta-traje-cazetv-_JM" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="drop.buy">Garante a sua</span></a>
+        </div>
+        <div class="pcard reveal" data-tilt>
+          <div class="tag" data-i18n="p.tag4">Nova</div>
+          <div class="pshirt"><img class="pimg" src="https://http2.mlstatic.com/D_NQ_NP_634155-MLB113158716645_062026-O-camisa-branca-traje-cazetv.webp" loading="lazy" alt="Camisa Traje — Branca"></div>
+          <div class="pmeta">
+            <div class="name" data-i18n="p.n4">Camisa Traje — Branca</div>
+            <div class="desc" data-i18n="p.d4">Clássica, pra qualquer jogo.</div>
+            <div class="price"><span class="now">R$ 69</span><span class="old">R$ 159</span><span class="off">56% OFF</span></div>
+          </div><a class="buy" href="https://produto.mercadolivre.com.br/MLB-6724278902-camisa-branca-traje-cazetv-_JM" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="drop.buy">Garante a sua</span></a>
+        </div>
+        <div class="pcard reveal" data-tilt>
+          <div class="tag" data-i18n="p.tag5">Do dia a dia</div>
+          <div class="pshirt"><img class="pimg" src="https://http2.mlstatic.com/D_NQ_NP_702318-MLB113471919013_062026-O-camisa-preta-cazetv-basica.webp" loading="lazy" alt="Camisa Preta — Básica"></div>
+          <div class="pmeta">
+            <div class="name" data-i18n="p.n5">Camisa Preta — Básica</div>
+            <div class="desc" data-i18n="p.d5">O básico que não erra. Dia a dia.</div>
+            <div class="price"><span class="now">R$ 69</span><span class="old">R$ 159</span><span class="off">56% OFF</span></div>
+          </div><a class="buy" href="https://produto.mercadolivre.com.br/MLB-4658013485-camisa-preta-cazetv-basica-_JM" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="drop.buy">Garante a sua</span></a>
+        </div>
+      </div>
+      <p class="trust reveal" data-i18n="drop.trust">Compra segura pela loja oficial no Mercado Livre · +277 mil seguidores · troca garantida</p>
+      <details class="acc reveal">
+        <summary><span><i class="fa-solid fa-ruler-horizontal"></i> <span data-i18n="drop.size">Ficou na dúvida do tamanho? Bora resolver</span></span><span class="plus">&#65291;</span></summary>
+        <div class="body">
+          <table class="sztable">
+            <tr>
+              <th data-i18n="drop.size.t">Tamanho</th>
+              <th data-i18n="drop.size.w">Largura (cm)</th>
+              <th data-i18n="drop.size.h">Altura (cm)</th>
+            </tr>
+            <tr>
+              <td>P</td>
+              <td>50</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>53</td>
+              <td>72</td>
+            </tr>
+            <tr>
+              <td>G</td>
+              <td>56</td>
+              <td>74</td>
+            </tr>
+            <tr>
+              <td>GG</td>
+              <td>59</td>
+              <td>76</td>
+            </tr>
+          </table>
+          <p style="color:var(--cinza);font-size:13px;margin-top:10px"><span data-i18n="drop.size.note">Medida com a peça no plano. Na dúvida entre dois, pega o maior — modelagem de jogo.</span></p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="blk" id="sobre" style="background:var(--graf2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
+    <div class="wrap">
+      <div class="sbtop">
+        <div class="sbtxt">
+          <div class="kick reveal" data-i18n="sb.kick">Sobre a Cazé</div>
+          <h2 class="disp htitle reveal" data-i18n-html="sb.title">O estádio agora é <span class="ouro">digital</span></h2>
+          <p class="lead reveal" data-i18n="sb.lead">A Copa de 2026 provou: não se assiste mais futebol como antes. O estádio virou digital, e a torcida se reúne em comunidade — do pré ao pós-jogo.</p>
+          <p class="reveal sbbody" data-i18n="sb.body">A CazéTV, operada pela LiveMode, transmite os maiores eventos do esporte de graça no YouTube — e virou o ponto de encontro digital dessa torcida.</p>
+        </div>
+        <div class="sbvis reveal">
+          <div class="sbmask"><img src="https://yt3.googleusercontent.com/R-NJzpNfFCOxdwRZGFsCzCDK4pLDpfU0MN77CYXf8S9UP4YDbA4YgE_1WIshV2zz54A-Bns=s400-c-k-c0x00ffffff-no-rj" onerror="this.parentNode.parentNode.style.display='none'" alt="Mascote CazéTV"></div>
+        </div>
+      </div>
+      <div class="sbgrid">
+        <div class="sbcard reveal"><i class="fa-solid fa-users"></i>
+          <div class="sbn"><span data-count="130" data-suf=" mi">0</span></div>
+          <div class="sbl" data-i18n="sb.s1">de pessoas alcançadas na Copa 2026</div>
+        </div>
+        <div class="sbcard reveal"><i class="fa-solid fa-tv"></i>
+          <div class="sbn"><span data-count="70" data-suf="%">0</span></div>
+          <div class="sbl" data-i18n="sb.s2">do tempo assistido veio das Smart TVs</div>
+        </div>
+        <div class="sbcard reveal"><i class="fa-solid fa-trophy"></i>
+          <div class="sbn">Nº1</div>
+          <div class="sbl" data-i18n="sb.s3">maior canal de esporte do YouTube no Brasil</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELENCO -->
+  <section class="blk" id="elenco">
+    <div class="wrap">
+      <div class="kick reveal" data-i18n="el.kick">Quem faz a Cazé</div>
+      <h2 class="disp htitle reveal" data-i18n-html="el.title">O time que <span class="ouro">narra o Brasil</span></h2>
+      <p class="lead reveal" data-i18n="el.lead">Narradores, comentaristas, apresentadores, repórteres — e a torcida. O time inteiro que transformou jogo em festa. Ninguém joga sozinho.</p>
+      <div class="tgrid">
+        <div class="tcard reveal" data-tilt data-p="casimiro">
+          <div class="portrait pC"><img src="https://assets.goal.com/images/v3/bltb32b34d1ee9e4496/casimiro_copa_2022_2.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Fundador</span><span class="num">10</span><span class="ini">CA</span></div>
+          <div class="tinfo">
+            <div class="tname">Casimiro</div>
+            <div class="tdesc">A alma da Cazé. “Meteu essa?”</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="lff">
+          <div class="portrait pL"><img src="https://assets.goal.com/images/v3/blt287c4b8d668c5cfb/lff.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Narrador</span><span class="num">1</span><span class="ini">LF</span></div>
+          <div class="tinfo">
+            <div class="tname">Luís Felipe Freitas</div>
+            <div class="tdesc">A voz dos gols. Narrador nº1.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="raony">
+          <div class="portrait pL"><img src="https://assets.goal.com/images/v3/blt60dde8eb5a4d1ddf/crop/MM5DOMRQHI2DANJ2NZXXOZJ2G44DUNZZ/GHXouiIWMAA79hO.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Narrador</span><span class="num">7</span><span class="ini">RP</span></div>
+          <div class="tinfo">
+            <div class="tname">Raony Pacheco</div>
+            <div class="tdesc">Voz de Brasileirão e Cazé.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="nardini">
+          <div class="portrait pL"><img src="https://assets.goal.com/images/v3/bltd06e85f37651f6ba/crop/MM5DOMBRHIZTSNB2NZXXOZJ2GA5DEMQ=/images%20(1).jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Narrador</span><span class="num">9</span><span class="ini">FN</span></div>
+          <div class="tinfo">
+            <div class="tname">Fernando Nardini</div>
+            <div class="tdesc">Grito de gol ex-ESPN.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="hazan">
+          <div class="portrait pL"><span class="role">Narrador</span><span class="num">11</span><span class="ini">MH</span></div>
+          <div class="tinfo">
+            <div class="tname">Marcelo Hazan</div>
+            <div class="tdesc">Narração raiz, jeito Cazé.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="donan">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/blte5f5605fd78aa300/crop/MM5DIMBQHIZDENJ2NZXXOZJ2GA5DQOA=/Guj9pZrWYAERttz.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">8</span><span class="ini">FC</span></div>
+          <div class="tinfo">
+            <div class="tname">Fernando Campos “Donan”</div>
+            <div class="tdesc">Análise com samba no pé.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="bruno">
+          <div class="portrait pD"><span class="role">Comentarista</span><span class="num">5</span><span class="ini">BM</span></div>
+          <div class="tinfo">
+            <div class="tname">Bruno Magalhães</div>
+            <div class="tdesc">Tática e treta na medida.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="beltrao">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/blt3325162e3ec03e08/crop/MM5DCMRSHE5DMOJRHJXG653FHI2TMORTGI2Q====/Fkc8GIHXkAIoHPO.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">6</span><span class="ini">GB</span></div>
+          <div class="tinfo">
+            <div class="tname">Guilherme Beltrão</div>
+            <div class="tdesc">Rei dos reacts da firma.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="rafaeloliveira">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/blt8cbc159f08af01c4/crop/MM5DCMBYGA5DMMBYHJXG653FHI2TUMA=/5d54759836579.webp" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">4</span><span class="ini">RO</span></div>
+          <div class="tinfo">
+            <div class="tname">Rafael Oliveira</div>
+            <div class="tdesc">Análise ex-ESPN e Band.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="jucabral">
+          <div class="portrait pB"><img src="https://assets.goal.com/images/v3/blt86956659c073ad59/Sem%20t%C3%ADtulo.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">3</span><span class="ini">JC</span></div>
+          <div class="tinfo">
+            <div class="tname">Ju Cabral</div>
+            <div class="tdesc">Ex-seleção, análise de craque.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="marcus">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/blt48c3a3eb4e939fae/crop/MM5DGMRQHIYTQMB2NZXXOZJ2GI2DUNBT/GnNmDKWWUAAw1aG.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">2</span><span class="ini">MC</span></div>
+          <div class="tinfo">
+            <div class="tname">Marcus Carvalho</div>
+            <div class="tdesc">Tática na veia.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="luisfolha">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/bltae48d1f8b858bd20/crop/MM5DCMBYGA5DMMBYHJXG653FHIYDUNBRGY======/Dj9EXwcXsAAp-PF.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">14</span><span class="ini">LF</span></div>
+          <div class="tinfo">
+            <div class="tname">Luís Folha</div>
+            <div class="tdesc">Papo reto de bola.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="lucaspedrosa">
+          <div class="portrait pD"><span class="role">Comentarista</span><span class="num">16</span><span class="ini">LP</span></div>
+          <div class="tinfo">
+            <div class="tname">Lucas Pedrosa</div>
+            <div class="tdesc">Também comenta no SBT.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="rafaeldasilva">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/getty-1341509081/crop/MM5DKMBQGQ5DEOBRGU5G433XMU5DAORSGYYQ====/GettyImages-1341509081.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">17</span><span class="ini">RS</span></div>
+          <div class="tinfo">
+            <div class="tname">Rafael da Silva</div>
+            <div class="tdesc">Bola e resenha na mesma jogada.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="gabrielsimoes">
+          <div class="portrait pD"><span class="role">Comentarista</span><span class="num">18</span><span class="ini">GS</span></div>
+          <div class="tinfo">
+            <div class="tname">Gabriel Simões</div>
+            <div class="tdesc">Produtor e comentarista.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="rafaelsaraiva">
+          <div class="portrait pB"><span class="role">Comentarista</span><span class="num">19</span><span class="ini">RS</span></div>
+          <div class="tinfo">
+            <div class="tname">Rafael Saraiva</div>
+            <div class="tdesc">Do Porta dos Fundos pro jogo.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="larissa">
+          <div class="portrait pB"><span class="role">Comentarista</span><span class="num">20</span><span class="ini">LJ</span></div>
+          <div class="tinfo">
+            <div class="tname">Larissa Jardim</div>
+            <div class="tdesc">Chegou pelo Café TV.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="luizff">
+          <div class="portrait pD"><span class="role">Comentarista</span><span class="num">21</span><span class="ini">LF</span></div>
+          <div class="tinfo">
+            <div class="tname">Luiz Fernando Filho</div>
+            <div class="tdesc">Voz da firma.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="djalminha">
+          <div class="portrait pB"><img src="https://assets.goal.com/images/v3/getty-2154788500/crop/MM5DGMBQGA5DCNRYHA5G433XMU5DAORQ/GettyImages-2154788500.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">23</span><span class="ini">DJ</span></div>
+          <div class="tinfo">
+            <div class="tname">Djalminha</div>
+            <div class="tdesc">Craque virou comentarista.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="rodrigocaio">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/getty-1828916311/crop/MM5DIMBQGA5DEMRVGA5G433XMU5DAORSGA4Q====/GettyImages-1828916311.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">33</span><span class="ini">RC</span></div>
+          <div class="tinfo">
+            <div class="tname">Rodrigo Caio</div>
+            <div class="tdesc">Zagueiro campeão, agora analista.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="quaresma">
+          <div class="portrait pD"><img src="https://assets.goal.com/images/v3/getty-1826873693/crop/MM5DEOBXGI5DCNRRGY5G433XMU5DAORRGUYA====/GettyImages-1826873693.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Comentarista</span><span class="num">26</span><span class="ini">RQ</span></div>
+          <div class="tinfo">
+            <div class="tname">Ricardo Quaresma</div>
+            <div class="tdesc">Craque português na área.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="romario">
+          <div class="portrait pB"><span class="role">Comentarista</span><span class="num">11</span><span class="ini">RO</span></div>
+          <div class="tinfo">
+            <div class="tname">Romário</div>
+            <div class="tdesc">Baixinho. Fenômeno. Lenda.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="igor">
+          <div class="portrait pC"><img src="https://assets.goal.com/images/v3/blta466ab1cc04345b5/crop/MM5DEMBUHA5DCMJVGI5G433XMU5DAORZHA======/GoE6H2OXgAAQ2cy.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Apresentador</span><span class="num">-</span><span class="ini">IR</span></div>
+          <div class="tinfo">
+            <div class="tname">Igor Rodrigues</div>
+            <div class="tdesc">Comanda o estúdio.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="barbara">
+          <div class="portrait pC"><img src="https://assets.goal.com/images/v3/blt8145b814c9eec3e7/crop/MM5DCNJTGY5DQNRUHJXG653FHIYDUNJV/GrLzf2FWQAABNNs.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Apresentadora</span><span class="num">-</span><span class="ini">BC</span></div>
+          <div class="tinfo">
+            <div class="tname">Bárbara Coelho</div>
+            <div class="tdesc">Apresentação de primeira.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="adnet">
+          <div class="portrait pC"><img src="https://assets.goal.com/images/v3/bltbd7920c77dcc1430/51733506266_27f01d978d_o.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Apresentador</span><span class="num">-</span><span class="ini">MA</span></div>
+          <div class="tinfo">
+            <div class="tname">Marcelo Adnet</div>
+            <div class="tdesc">Humor no meio do jogo.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="daynatale">
+          <div class="portrait pE"><img src="https://assets.goal.com/images/v3/bltc72caaa4f9bd5c7f/crop/MM5DCNJTGY5DQNRUHJXG653FHIYDUNJZGI======/GunXm8rXcAAkEoV.jpeg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Repórter</span><span class="num">-</span><span class="ini">DN</span></div>
+          <div class="tinfo">
+            <div class="tname">Day Natale</div>
+            <div class="tdesc">Direto do gramado.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="chicomoedas">
+          <div class="portrait pE"><img src="https://assets.goal.com/images/v3/bltec47535b828cda0e/crop/MM5DINZZHIZDMOJ2NZXXOZJ2GA5DQOA=/images.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Repórter</span><span class="num">-</span><span class="ini">CM</span></div>
+          <div class="tinfo">
+            <div class="tname">Chico Moedas</div>
+            <div class="tdesc">Reportagem descontraída.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="fredcaldeira">
+          <div class="portrait pE"><img src="https://assets.goal.com/images/v3/bltf042afc7084a93c6/crop/MM5DINBXHIZDKMJ2NZXXOZJ2GA5DA===/images%20(2).jpg" alt="" loading="lazy" onerror="this.remove()"><span class="role">Repórter</span><span class="num">-</span><span class="ini">FC</span></div>
+          <div class="tinfo">
+            <div class="tname">Fred Caldeira</div>
+            <div class="tdesc">De campo em campo.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="allanstag">
+          <div class="portrait pE"><span class="role">A firma</span><span class="num">00</span><span class="ini">AS</span></div>
+          <div class="tinfo">
+            <div class="tname">Allan Stag</div>
+            <div class="tdesc">O Estagiário. Xodó da firma.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="tcard reveal" data-tilt data-p="voce">
+          <div class="portrait pT"><span class="role">Torcida</span><span class="num">12</span><span class="ini">★</span></div>
+          <div class="tinfo">
+            <div class="tname">Você</div>
+            <div class="tdesc">O 12º jogador.</div><span class="seemore"><span data-i18n="el.see">Ver perfil</span> <i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="owners reveal">
+        <div class="kick2" data-i18n="el.owners">Quem comanda por trás</div>
+        <div class="owrow">
+          <div class="ow"><span class="owav owlm"><img src="https://www.livemode.com/livemode-logo.png" onerror="this.remove();this.parentNode.classList.add('ini');this.parentNode.classList.remove('owlm');this.parentNode.textContent='LM'" alt="LiveMode"></span>
+            <div class="owtx"><b data-i18n="ow1b">LiveMode</b><span data-i18n="ow1s">empresa dona da CazéTV</span></div>
+          </div>
+          <div class="ow"><span class="owav"><img src="https://assets.goal.com/images/v3/bltb32b34d1ee9e4496/casimiro_copa_2022_2.jpg" onerror="this.remove();this.parentNode.classList.add('ini');this.parentNode.textContent='CM'" alt="Casimiro"></span>
+            <div class="owtx"><b data-i18n="ow2b">Casimiro</b><span data-i18n="ow2s">sócio da holding global do grupo</span></div>
+          </div>
+          <div class="ow"><span class="owav"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/250px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg" onerror="this.remove();this.parentNode.classList.add('ini');this.parentNode.textContent='CR7'" alt="Cristiano Ronaldo"></span>
+            <div class="owtx"><b data-i18n="ow3b">Cristiano Ronaldo</b><span data-i18n="ow3s">sócio investidor (2026)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTIFY -->
+  <section class="blk" style="padding-top:20px">
+    <div class="wrap">
+      <div class="notify reveal">
+        <div class="kick" style="text-align:center" data-i18n="nt.kick">Não perde o próximo</div>
+        <h2 class="disp" style="font-size:clamp(30px,5vw,50px)" data-i18n-html="nt.title">Avisa quando cair<br>o próximo <span class="ouro">drop</span></h2>
+        <p style="color:var(--txt2);margin-top:10px">Deixa teu contato que a gente te avisa — simplesmente.</p>
+        <form id="notifyForm">
+          <input id="notifyInput" type="text" placeholder="seu e-mail ou WhatsApp" data-i18n-ph="nt.ph" aria-label="contato" required>
+          <button class="btn primary" type="submit"><i class="fa-solid fa-bell"></i> <span data-i18n="nt.btn">Quero ser avisado</span></button>
+        </form>
+        <div class="msg" id="notifyMsg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+          <div class="brand2">Cazé<span class="ouro">TV</span></div>
+          <p data-i18n="ft.tag">A loja oficial da maior torcida do YouTube. Aqui é o oficial — cuidado com réplica.</p>
+        </div>
+        <div>
+          <h5 data-i18n="ft.nav">Navegar</h5>
+          <a class="fl" href="#drop" data-i18n="ft.l1">Coleção da Copa</a><a class="fl" href="#agenda" data-i18n="ft.l2">Onde assistir</a><a class="fl" href="#assista" data-i18n="ft.l3">Canais</a>
+        </div>
+        <div>
+          <h5 data-i18n="ft.of">Oficial</h5>
+          <a class="fl" href="https://www.mercadolivre.com.br/loja/caze-tv" target="_blank" rel="noopener">Loja no Mercado Livre ›</a>
+          <a class="fl" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener">Canal no YouTube ›</a>
+          <a class="fl" href="https://www.instagram.com/cazetv/" target="_blank" rel="noopener">Instagram ›</a>
+        </div>
+      </div>
+      <div class="disc" data-i18n-html="ft.disc"><b>Conceito de estudo — não-oficial.</b> Página criada por Gabriel Gomes como peça de portfólio, sem vínculo com a CazéTV / LiveMode. Produtos, preços, números e agenda são reais (jul/2026), usados só para demonstração. Marcas de terceiros pertencem aos seus donos.</div>
+    </div>
+  </footer>
+
+  <div class="scta">
+    <div class="t"><span data-i18n="scta.t">Coleção da Copa</span><small data-i18n="scta.s">a partir de R$ 72 · loja oficial</small></div>
+    <a href="https://www.mercadolivre.com.br/loja/caze-tv" target="_blank" rel="noopener" data-i18n="scta.b">Garante a sua</a>
+  </div>
+
+  <div id="bioModal" class="bmodal" aria-hidden="true">
+    <div class="bmback"></div>
+    <div class="bmcard" role="dialog" aria-modal="true">
+      <button class="bmclose" aria-label="Fechar">&times;</button>
+      <div class="bmhead">
+        <div class="bmport" id="bmPort"></div>
+        <div>
+          <div class="bmrole" id="bmRole"></div>
+          <div class="bmname" id="bmName"></div>
+        </div>
+      </div>
+      <div class="bmbio" id="bmBio"></div>
+      <a class="bmlink" id="bmLink" href="https://www.youtube.com/@CazeTV" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> <span data-i18n="md.link">Ver na CazéTV</span></a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
