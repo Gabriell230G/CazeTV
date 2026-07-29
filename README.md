@@ -7,7 +7,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-conceito%20de%20estudo-F2B705?style=for-the-badge">
-  <img src="https://img.shields.io/badge/HTML-CSS-JS-000000?style=for-the-badge&logo=html5&logoColor=F2B705">
   <img src="https://img.shields.io/badge/idiomas-PT%20%7C%20EN%20%7C%20ES-1E7A46?style=for-the-badge">
   <img src="https://img.shields.io/badge/tema-claro%20%2F%20escuro-333?style=for-the-badge">
   <img src="https://img.shields.io/badge/responsivo-sim-F2B705?style=for-the-badge">
@@ -77,6 +76,9 @@ Projeto **conceito, não-oficial**, criado como peça de portfólio. **Sem vínc
 ## 👤 Autor
 
 **Gabriel Vasconcellos Gomes** — dev & designer
-[LinkedIn](https://www.linkedin.com/in/gabriel-vasconcellos-gomes-76a246246)
+<p align="left">
+  <a href="https://www.linkedin.com/in/gabriel-vasconcellos-gomes-76a246246/">
+    <img src="https://img.shields.io/badge/LinkedIn-Conectar-blue?style=for-the-badge&logo=linkedin">
+  </a>
+</p>
 
-<p align="center"><sub>Feito com 💛🖤 e muito "meteu essa?".</sub></p>
